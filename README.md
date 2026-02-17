@@ -2,6 +2,17 @@
 
 A Universal Agent Skill and MCP Server for real-time Text-to-Speech (TTS) announcements on Apple HomePods (AirPlay 2 devices).
 
+## 🎯 Why this exists? (The Use Case)
+This skill was primarily designed to solve a specific problem: **"How can my remote AI agent notify me in the physical world?"**
+
+By combining this skill with [**openclaw-bridge-remote**](https://github.com/lucas-jo/openclaw-bridge-remote), you can create a seamless notification loop between your remote heavy-lifting servers and your local environment.
+
+**Scenario: The "Job Done" Notification**
+1. Your AI agent on a remote GPU server finishes a long training task.
+2. It uses `openclaw-bridge-remote` to tunnel a request to your local machine.
+3. Your local machine (running this skill) receives the request.
+4. **Result:** Your Living Room HomePod announces: *"Sir, the model training is complete."*
+
 ## 🛠 Prerequisites
 
 This skill uses the Python library `pyatv` as a bridge to communicate with HomePods.
